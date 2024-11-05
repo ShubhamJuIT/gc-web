@@ -1,0 +1,90 @@
+// main hex colors for reference purposes
+// --primaryColor: #01F801;
+// --secondaryColor: #DE3CDE;
+// --secondaryDarkColor: #763076;
+// --regularColor: #202020;
+// --whiteColor: #FFFFFF;
+// --blackColor: #000000;
+
+// --successColor: #76BB70;
+// --dangerColor: #FF5C58;
+// --warningColor: #FEA404;
+// --infoColor: #5FAEEA;
+// --chart-1: var(--primaryColor);
+// --chart-2: #e23670;
+// --chart-3: #f97316;
+// --chart-4: #af57db;
+// --chart-5: #2662d9;
+// --chart-6: var(--infoColor);
+
+
+@layer base {
+    :root {
+
+
+
+        --primaryColor: 1 248 1;
+        --secondaryColor: 222 60 222;
+        --secondaryDarkColor: 118 48 118;
+        --regularColor: 32 32 32;
+        --whiteColor: 255 255 255;
+        --blackColor: 0 0 0;
+
+        --successColor: 118 187 112;
+        --dangerColor: 255 92 88;
+        --warningColor: 254 164 4;
+        --infoColor: 95 174 234;
+
+
+        // charts
+        --chart-1: var(--primaryColor);
+        --chart-2: 226 54 112;
+        --chart-3: 249, 115, 22;
+        --chart-4: 175 87 219;
+        --chart-5: 38 98 217;
+        --chart-6: var(--infoColor);
+
+        // shadcn defaults
+
+        --background: var(--blackColor);
+        --foreground: var(--whiteColor);
+
+        --card: var(--blackColor);
+        --card-foreground: var(--whiteColor);
+
+        --popover: var(--blackColor);
+        --popover-foreground: var(--whiteColor);
+
+        --primary: var(--primaryColor);
+        --primary-foreground: var(--blackColor);
+
+        --secondary: var(--secondaryColor);
+        --secondary-foreground: var(--blackColor);
+
+        --muted: var(--regularColor);
+        --muted-foreground: var(--whiteColor);
+
+        --accent: var(--regularColor);
+        --accent-foreground: var(--whiteColor);
+
+        --destructive: var(--dangerColor);
+        --destructive-foreground: var(--whiteColor);
+
+        --border: var(--primaryColor);
+        --input: var(--primaryColor);
+        --ring: var(--primary);
+        --radius: 0.4rem;
+    }
+
+
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}

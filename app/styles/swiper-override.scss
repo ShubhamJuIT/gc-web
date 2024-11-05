@@ -1,0 +1,80 @@
+.courses {
+    .swiper-slide {
+
+        height: auto !important;
+
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        bottom: 2%;
+        padding: 10px;
+        gap: 10px;
+
+    }
+
+    .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        text-align: center;
+
+        color: rgb(var(--whiteColor));
+        opacity: 1;
+        rotate: 45deg;
+        background: rgb(var(--primaryColor) / 0.5);
+        border-radius: 0px;
+    }
+
+    .swiper-pagination-bullet-active {
+        color: rgb(var(--whiteColor));
+        background: rgb(var(--primaryColor));
+    }
+
+    --swiper-pagination-bullet-horizontal-gap:10px;
+
+    @media (max-width: 768px) {
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+        }
+
+        --swiper-pagination-bullet-horizontal-gap:5px;
+
+    }
+
+}
+
+.study-area-swiper {
+
+
+
+    &.swiper {
+
+
+        padding-left: 3.5rem;
+
+        @media (max-width:640px) {
+
+            padding-left: 2.5rem;
+        }
+
+
+
+        .next-btn {
+            display: flex;
+            position: absolute;
+            top: 54%;
+            left: -3%;
+        }
+
+        .prev-btn {
+            display: flex;
+            position: absolute;
+            top: 25%;
+            left: -4%;
+        }
+    }
+
+
+
+}

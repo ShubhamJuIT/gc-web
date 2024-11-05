@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../public/fontello/css/fontello.css";
+@import './styles/swiper-override.scss';
+@import './styles/steps.scss';
+@import './styles/theme.scss';
+@import './styles/main.scss';
